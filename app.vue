@@ -1,10 +1,15 @@
 <template>
-  <div class="sm:py-10">
+  <div>
     <Html lang="en" />
     <Meta property="og:image" content="/cover.jpg" />
     <Meta name="twitter:card" content="summary_large_image" />
-    <Navbar />
-    <NuxtPage />
+    <v-app>
+      <v-container>
+        <Navbar />
+        <TabBar />
+        <NuxtPage />
+      </v-container>
+    </v-app>
   </div>
 </template>
 

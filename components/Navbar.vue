@@ -1,29 +1,29 @@
 <template>
-  <div class="flex justify-between max-w-2xl px-4 py-4 mx-auto sm:px-8">
-    <!-- Navigation -->
-    <div class="text-gray-700 dark:text-gray-200">
-      <ContentNavigation v-slot="{ navigation }">
-        <NuxtLink
-          v-for="link of navigation"
-          :key="link._path"
-          :to="link._path"
-          active-class="font-bold"
-          class="mr-4"
-        >
-          {{ link.navTitle || link.title }}
-        </NuxtLink>
-      </ContentNavigation>
-      <v-chip
-        class="ma-2"
-      >
-        Default
-      </v-chip>
-    </div>
-    <!-- Social icons & Color Mode -->
-    <div class="space-x-3 text-gray-500 transition">
-      <a href="https://twitter.com/Atinux" title="Twitter" class="hover:text-gray-700 dark:hover:text-gray-300"><Icon name="fa-brands:twitter" /></a>
-      <a href="https://github.com/Atinux/content-wind" title="GitHub" class="hover:text-gray-700 dark:hover:text-gray-300"><Icon name="fa-brands:github" /></a>
-      <ColorModeSwitch class="hover:text-gray-700 dark:hover:text-gray-300" />
-    </div>
-  </div>
+  <v-toolbar>
+    <v-toolbar-title>
+      <OrgLogo />
+    </v-toolbar-title>
+    <v-spacer />
+    <v-btn icon>
+      <v-icon>mdi-magnify</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>mdi-dots-vertical</v-icon>
+    </v-btn>
+    <v-app-bar-nav-icon />
+  </v-toolbar>
 </template>
+<script>
+export default {
+  props: {
+    title: {
+      type: Boolean,
+      default: false
+    },
+    onOpenMenu: {
+      type: String,
+      default: 'primary'
+    }
+  }
+}
+</script>
