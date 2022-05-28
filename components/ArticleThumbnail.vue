@@ -57,7 +57,7 @@ export default {
         const foundImage = require(`~/assets/img/${this.img}`)
         return foundImage
       } catch {
-        return null
+        return `/img/${this.img}`
       }
     }
   }

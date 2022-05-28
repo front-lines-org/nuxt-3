@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography')
   ],
+  prefix: 'tw-',
   content: ['content/**/*.{md,yml,json,json5,csv}'],
   theme: {
     extend: {

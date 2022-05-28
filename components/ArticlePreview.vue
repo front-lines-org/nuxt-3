@@ -56,9 +56,11 @@ export default {
     image () {
       try {
         const foundImage = require(`~/assets/img/${this.img}?webp`)
+        console.log(foundImage)
         return foundImage
-      } catch {
-        return null
+      } catch (e) {
+        console.error(e)
+        return `/img/${this.img}`
       }
     }
   }

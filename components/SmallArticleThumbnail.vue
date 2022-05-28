@@ -3,7 +3,7 @@
     <v-card-title style="word-break: normal">
       {{ title }}
     </v-card-title>
-    <v-card-subtitle> {{ $dayjs(createdAt).fromNow() }} </v-card-subtitle>
+    <v-card-subtitle> {{ 123 }} </v-card-subtitle>
   </v-card>
 </template>
 
