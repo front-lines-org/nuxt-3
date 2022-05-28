@@ -13,7 +13,7 @@ export default {
 <template>
   <v-container no-gutters>
     <v-row>
-      <v-col md="9" sm="12" lg="9" order-sm="2" order-md="1">
+      <v-col md="8" sm="12" lg="9" order-sm="2" order-md="1">
         <v-row>
           <v-col md="3" sm="12" class="pt-5">
             <template v-for="item in news.slice(4, 7)" :key="`${item.slug}_divider`">
@@ -31,8 +31,8 @@ export default {
                 class="mb-2"
               />
             </template>
+            <v-divider inset vertical class="d-none d-sm-block" />
           </v-col>
-          <v-divider inset vertical class="d-none d-sm-block" />
           <v-col md="9" sm="12">
             <v-col md="12">
               <template v-for="item in news.slice(1, 2)">

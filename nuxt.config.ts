@@ -28,6 +28,13 @@ export default defineNuxtConfig({
   vite: {
     define: {
       'process.env.DEBUG': false
+    },
+    css: {
+      preprocessorOptions: {
+        sass: {
+          additionalData: '@use "~/assets/variables.scss"'
+        }
+      }
     }
   }
 })
