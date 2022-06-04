@@ -21,6 +21,9 @@ export default defineNuxtPlugin((nuxtApp) => {
       secondary: '#ffba74',
       accent: '#8bc34a',
       anchor: '#8c9eff'
+    },
+    variables: {
+      'body-font-family': "'Libre Franklin', sans-serif"
     }
   }
 

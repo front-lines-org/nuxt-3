@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       theme: 'dracula'
     }
   },
-  css: ['vuetify/lib/styles/main.sass', 'mdi/css/materialdesignicons.min.css'],
+  css: ['~/assets/variables.scss', 'vuetify/lib/styles/main.sass', 'mdi/css/materialdesignicons.min.css'],
   build: {
     transpile: ['vuetify']
   },

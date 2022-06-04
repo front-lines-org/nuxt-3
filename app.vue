@@ -7,7 +7,10 @@
       <v-container>
         <Navbar />
         <TabBar />
-        <NuxtPage />
+        <div class="site-container tw-mb-44">
+          <NuxtPage />
+        </div>
+        <OrgFooter />
       </v-container>
     </v-app>
   </div>
