@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       theme: 'dracula'
     }
   },
-  css: ['~/assets/variables.scss', 'vuetify/lib/styles/main.sass', 'mdi/css/materialdesignicons.min.css'],
+  css: ['~/assets/variables.scss', 'mdi/css/materialdesignicons.min.css'],
   build: {
     transpile: ['vuetify']
   },
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         sass: {
-          additionalData: '@use "~/assets/variables.scss"'
+          // additionalData: '@use "~/assets/variables.scss"'
         }
       }
     }

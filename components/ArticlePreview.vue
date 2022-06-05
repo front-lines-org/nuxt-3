@@ -1,5 +1,5 @@
 <template>
-  <v-card class="article" tile flat nuxt :to="`articles/${slug}`">
+  <v-card class="article" tile flat nuxt :to="slug">
     <v-row>
       <v-col cols="7" sm="12" md="8">
         <p class="primary-color pa-1 font-weight-black">
@@ -56,10 +56,8 @@ export default {
     image () {
       try {
         const foundImage = require(`~/assets/img/${this.img}?webp`)
-        console.log(foundImage)
         return foundImage
       } catch (e) {
-        console.error(e)
         return `/img/${this.img}`
       }
     }

@@ -19,28 +19,28 @@ export default {
             <template v-for="item in news.slice(4, 7)" :key="`${item.slug}_divider`">
               <article-thumbnail
                 v-if="item"
-                :key="item.slug"
+                :key="item._id"
                 :title="item.title"
-                :slug="item.slug"
+                :slug="item._path"
                 :article-type="item.category"
                 :img="item.img"
               />
               <v-divider
-
                 horizontal
                 class="mb-2"
               />
             </template>
             <v-divider inset vertical class="d-none d-sm-block" />
           </v-col>
+          <v-divider inset vertical class="d-none d-sm-block" />
           <v-col md="9" sm="12">
             <v-col md="12">
               <template v-for="item in news.slice(1, 2)">
                 <article-thumbnail
                   v-if="item"
-                  :key="item.slug"
+                  :key="item._id"
                   :title="item.title"
-                  :slug="item.slug"
+                  :slug="item._path"
                   :article-type="item.category"
                   :img="item.img"
                   :author="item.author"
@@ -50,12 +50,12 @@ export default {
             </v-col>
             <v-divider inset horizontal class="d-none d-sm-block" />
             <v-col>
-              <template v-for="item in news.slice(2, 5)" :key="`${item.slug}_divider`">
+              <template v-for="item in news.slice(2, 5)" :key="`${item._path}_divider`">
                 <article-preview
                   v-if="item"
-                  :key="item.slug"
+                  :key="item._path"
                   :title="item.title"
-                  :slug="item.slug"
+                  :slug="item._path"
                   :article-type="item.category"
                   :img="item.img"
                 />
@@ -79,9 +79,9 @@ export default {
         <template v-for="item in news" :key="`${item.slug}_divider`">
           <small-article-thumbnail
             v-if="item"
-            :key="item.slug"
+            :key="item._id"
             :title="item.title"
-            :slug="item.slug"
+            :slug="item._path"
             :article-type="item.category"
             :img="item.img"
             :created-at="item.createdAt"
@@ -98,8 +98,8 @@ export default {
 
 <style lang="scss" scoped>
 .v-divider--inset {
-  max-width: initial !important;
-  max-height: initial !important;
+  // max-width: initial !important;
+  // max-height: initial !important;
   &:not(.v-divider--vertical) {
     margin-top: -1px !important;
     margin-left: 8px !important;

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="article" tile flat nuxt :to="`articles/${slug}`">
+  <v-card class="article" tile flat :to="`articles/${slug}`">
     <v-card-title style="word-break: normal">
       {{ title }}
     </v-card-title>

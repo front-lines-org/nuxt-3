@@ -23,7 +23,8 @@ export default defineNuxtPlugin((nuxtApp) => {
       anchor: '#8c9eff'
     },
     variables: {
-      'body-font-family': "'Libre Franklin', sans-serif"
+      'body-font-family': "'Libre Franklin', sans-serif",
+      'heading-font-family': "'Merriweather', sans-serif"
     }
   }
 

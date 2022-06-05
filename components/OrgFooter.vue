@@ -9,7 +9,7 @@
 
           <v-spacer />
 
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon flat>Sh
+          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon flat>
             <v-icon size="24px">
               {{ icon }}
             </v-icon>

@@ -32,13 +32,16 @@ const { data: news } = await useAsyncData('equal', () => {
     'title',
     'shortDescription',
     'img',
-    'slug',
+    '_path',
+    '_id',
     'description',
     'author',
     'createdAt',
     'category'
   ])
-    .sort('createdAt', 'asc')
+    .sort({ createdAt: 0 })
     .find()
 })
+
+console.log(news)
 </script>
