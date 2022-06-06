@@ -1,5 +1,5 @@
 <template>
-  <v-card class="article" tile flat nuxt :to="`articles/${slug}`">
+  <v-card class="article" tile flat nuxt :to="slug">
     <v-img :src="image" />
 
     <p class="primary-color pa-1 font-weight-black">

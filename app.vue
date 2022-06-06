@@ -4,14 +4,9 @@
     <Meta property="og:image" content="/cover.jpg" />
     <Meta name="twitter:card" content="summary_large_image" />
     <v-app>
-      <v-container>
-        <Navbar />
-        <TabBar />
-        <div class="site-container tw-mb-44">
-          <NuxtPage />
-        </div>
-        <OrgFooter />
-      </v-container>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </v-app>
   </div>
 </template>
