@@ -22,7 +22,7 @@
             />
             <img :src="`/img/${article.img}`" :alt="article.img" class="mb-0">
             <p class="text-xs font-light mt-0 text-slate-300 tw-not-prose">
-              Image: Ukraine ministry of Defense. Troops trainisng
+              Image: Ukraine ministry of Defense. Troops training
             </p>
 
             <ContentRenderer :value="article" />
